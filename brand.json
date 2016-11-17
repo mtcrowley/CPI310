@@ -1,0 +1,23 @@
+brand: 	
+	{	
+	name: "",
+	tags: [""],
+	locations: 
+		[{	
+		city: "",
+		address: "",
+		zip: XXXXX,
+		genre: "",
+		deals: 
+			[{	
+			days: [0-6],
+			time: 
+				[{
+				start:XX:XX, 
+				end:XX:XX
+				}],
+			food: [""],
+			price: "",
+			}]	
+		}]
+	}
