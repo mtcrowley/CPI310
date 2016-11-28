@@ -38,8 +38,17 @@
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-button {
-    background-color: orange;
+.loginButton{
+    background-color: #FA4D27;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.blueButton{
+    background-color: #070795;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -146,7 +155,11 @@ button {
       letter-spacing: 4px;
       border-radius: 0;
       font-family: Montserrat, sans-serif;
+	  
+	  
   }
+  
+  
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
   }
@@ -262,13 +275,13 @@ button {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <img src="img/logoLong.png" class="navbar-brand" href="#myPage">
+      <a href="index.html"><img src="img/logoLong.png" class="navbar-brand" ></a>
 
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
 	  
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="loginButton">Login</button>
 	 
 <div id="id01" class="modal">
   
@@ -284,12 +297,15 @@ button {
       <label><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
         
-      <button type="submit">Login</button>
+      <button type="submit" class="blueButton">Login</button>
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    <div class="container" >
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="blueButton">Cancel</button>
     </div>
+	<div class="container">
+	<a href="NewUserAccount.php"><button type="button" class="blueButton">New User? Create Your MealDeals Account Here!</button></a>	
+	</div>
   </form>
 </div>
 
@@ -314,9 +330,7 @@ window.onclick = function(event) {
   <p>Your Favorite Foods at Your Favorite Prices</p> 
   <form class="form-inline">
     <input type="serach" class="form-control" size="50" placeholder="Food, Resturant, City" required>
-
     <button type="button" class="btn btn-danger">Search</button>
-
   </form>
 </footer>
 
